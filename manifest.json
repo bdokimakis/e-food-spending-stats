@@ -1,0 +1,16 @@
+{
+  "name": "e-food-spending-stats",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "homepage_url": "https://b.dokimakis.gr",
+  "content_scripts": [
+	{
+		"matches": ["https://www.e-food.gr/account/orders"],
+		"js": ["jquery.js", "canvasjs.min.js", "main.js"],
+		"run_at": "document_end"
+	}
+  ],
+  "web_accessible_resources": [
+	"loader.gif"
+  ]
+}
